@@ -4,5 +4,7 @@ Macbook={
     "color":"inclusitivity",
 }
 
-for index, item in enumerate(Macbook):
-    print(index, ":", Macbook["name"])
+""" for index, item in enumerate(Macbook):
+    print(index, ":", Macbook["name"]) """
+
+Macbook[0]
