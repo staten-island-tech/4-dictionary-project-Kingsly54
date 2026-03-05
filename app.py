@@ -18,13 +18,29 @@ Basketball={
     "price":"99.99",
     "color":"black"
 }
-
+Cart=[]
 idk=input("What would you like to buy Items include: Basketball, Pencil, Gun, Laptop")
+Num=0
 if idk == "Basketball":
     print(Basketball["name"])
-if idk == "Gun":
+    bre=input("Would you like to add to cart?")
+    price=Basketball["price"]
+elif idk == "Gun":
     print(Gun["name"])
-if idk == "Laptop":
+    bre=input("Would you like to add to cart?")
+    price=Gun["price"]
+elif idk == "Laptop":
     print(Laptop["name"])
-if idk == "Pencil":
-    print(Pencil[0]["name"])
+    bre=input("Would you like to add to cart?")
+    price=Laptop["price"]
+elif idk == "Pencil":
+    print(Pencil["name"])
+    bre=input("Would you like to add to cart?")
+    price=Gun["price"]
+if bre=="Yes" or "yes":
+    Cart.append(idk)
+    Num+=price
+
+    
+print(Cart)
+print(Num)
