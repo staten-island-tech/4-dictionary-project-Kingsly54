@@ -19,12 +19,6 @@ Basketball={
     "color":"black"
 }
 
-<<<<<<< HEAD
-""" for index, item in enumerate(Macbook):
-    print(index, ":", Macbook["name"]) """
-
-Macbook[0]
-=======
 idk=input("What would you like to buy Items include: Basketball, Pencil, Gun, Laptop")
 if idk == "Basketball":
     print(Basketball["name"])
@@ -34,4 +28,3 @@ if idk == "Laptop":
     print(Laptop["name"])
 if idk == "Pencil":
     print(Pencil[0]["name"])
->>>>>>> 449f5879ed7eef67322999819045d4a7c6c25b04
