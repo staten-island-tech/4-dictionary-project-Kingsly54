@@ -52,7 +52,7 @@ def breh():
                 Num+=pric
                 Cart.append(Pencil["name"])
         Ask=input("Would you like to buy more?")
-        if Ask=="Yes" or "yes":
+        if Ask=="Yes" or Ask=="yes":
             for i in idk:
                 if idk == "Basketball":
                     print(Basketball["name"])
@@ -82,7 +82,7 @@ def breh():
             if bre=="Yes" or "yes":
                 Num+=pric
                 Cart.append(Pencil["name"])
-    if Ask=="No" or "No":
+    if Ask=="No" or Ask=="no":
         print(Num)
         print(Cart)
 breh()
