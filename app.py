@@ -30,6 +30,7 @@ def breh():
             if bre=="Yes" or "yes":
                 Num+=pric
                 Cart.append(Basketball["name"])
+                idk=0
         elif idk == "Gun":
             print(Gun["name"])
             bre=input("Would you like to add to cart?")
@@ -37,6 +38,7 @@ def breh():
             if bre=="Yes" or "yes":
                 Num+=pric
                 Cart.append(Gun["name"])
+                idk=0
         elif idk == "Laptop":
             print(Laptop["name"])
             bre=input("Would you like to add to cart?")
@@ -44,6 +46,7 @@ def breh():
             if bre=="Yes" or "yes":
                 Num+=pric
                 Cart.append(Laptop["name"])
+                idk=0
         elif idk == "Pencil":
             print(Pencil["name"])
             bre=input("Would you like to add to cart?")
@@ -51,38 +54,11 @@ def breh():
             if bre=="Yes" or "yes":
                 Num+=pric
                 Cart.append(Pencil["name"])
+                idk=0
         Ask=input("Would you like to buy more?")
-        if Ask=="Yes" or Ask=="yes":
-            for i in idk:
-                if idk == "Basketball":
-                    print(Basketball["name"])
-                    bre=input("Would you like to add to cart?")
-                    pric=Basketball["price"]
-                if bre=="Yes" or "yes":
-                    Num+=pric
-                    Cart.append(Basketball["name"])
-                elif idk == "Gun":
-                    print(Gun["name"])
-                    bre=input("Would you like to add to cart?")
-                    pric=Gun["price"]
-            if bre=="Yes" or "yes":
-                Num+=pric
-                Cart.append(Gun["name"])
-        elif idk == "Laptop":
-            print(Laptop["name"])
-            bre=input("Would you like to add to cart?")
-            pric=Laptop["price"]
-            if bre=="Yes" or "yes":
-                Num+=pric
-                Cart.append(Laptop["name"])
-        elif idk == "Pencil":
-            print(Pencil["name"])
-            bre=input("Would you like to add to cart?")
-            pric=Pencil["price"]
-            if bre=="Yes" or "yes":
-                Num+=pric
-                Cart.append(Pencil["name"])
-    if Ask=="No" or Ask=="no":
-        print(Num)
-        print(Cart)
+        if Ask=="No" or Ask=="no":
+            print(Num)
+            print(Cart)
+        else:        
+            idk=input("What would you like to buy Items include: Basketball, Pencil, Gun, Laptop")
 breh()
