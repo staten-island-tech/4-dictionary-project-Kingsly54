@@ -22,7 +22,8 @@ def breh():
     Cart=[]
     Num=0
     idk=input("What would you like to buy Items include: Basketball, Pencil, Gun, Laptop")
-    for i in idk:
+    wtb=True
+    while wtb==True:
         if idk == "Basketball":
             print(Basketball["name"])
             bre=input("Would you like to add to cart?")
@@ -59,6 +60,7 @@ def breh():
         if Ask=="No" or Ask=="no":
             print(Num)
             print(Cart)
+            wtb=False
         else:        
             idk=input("What would you like to buy Items include: Basketball, Pencil, Gun, Laptop")
 breh()
